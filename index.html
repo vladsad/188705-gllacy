@@ -1,12 +1,174 @@
 <!DOCTYPE html>
+<!-- на работе ubuntu. gimp криво открыл psd. Не могу толком ничего пока сделать с ним.
+Ориентируюсь пока на картинка просто.
+Дома сделаю модалки и показать все что скрыто.
+Хотелось бы услышать претензии к моему коду. 
+Потом уберу эти коменты
+-->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="header">
+        <div class="container">
+        <img class="header__logo" src="img/logo.png" width="1" height="1" alt="Логотип GlaccyShop"/>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list__item header-nav-list-catalog">Каталог
+              <ul class="header-nav-list-catalog-list">
+                <li class="header-nav-list-catalog-list__item"><a href="#">Новинки</a></li>
+                <li class="header-nav-list-catalog-list__item"><a href="catalog.html">Сливочное</a></li>
+                <li class="header-nav-list-catalog-list__item"><a href="#">Щербеты</a></li>
+                <li class="header-nav-list-catalog-list__item"><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="header-nav-list__item">Доставка и оплата</li>
+            <li class="header-nav-list__item">О компании</li>
+          </ul>
+        </nav>
+        <div class="header-actioins">
+          <button class="header-actioins__search">Поиск</button>
+          <button class="header-actioins__login">Вход</button>
+          <button class="header-actioins__basket">Пусто</button>
+        </div>
+        <p class="header-call">
+          <span class="header-call__title">С 10 до 20, ежедневно</span><br>
+          <a class="header-call__tel" href="tel:+8812450-25-25">8 812 450-25-25</a>
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1 class="visible-hidden">Магазин мороженного GlaccyShop</h1>
+        <section class="main-slider">
+          <h2 class="visible-hidden">Слайдер мороженного</h2>
+          <div class="main-slider-buttons">
+            <p class="main-slider-buttons-item main-slider-buttons-item__active">
+                <input type="radio" name="main-slider" id="main-slider-1" checked />
+            </p>
+            <p class="main-slider-buttons-item">
+                <input type="radio" name="main-slider" id="main-slider-2"/>
+            </p>
+            <p class="main-slider-buttons-item">
+                <input type="radio" name="main-slider" id="main-slider-3"/>
+            </p>
+          </div>
+          <ul class="main-slider-list">
+            <li class="main-slider-list-item main-slider-list-item_active">
+              <label for="main-slider-1">Крем брюле и пломбир с малиновым джемом</label>
+              <img class="main-slider-list-item__img" src="img/крем-брюле.jpg" alt="Крем брюле и пломбир с малиновым джемом"/>
+            </li>
+            <!-- еще 2 таких тут -->
+          </ul>
+          <a class="btn main-slider__btn" href="#">Давайте оба</a>
+        </section>
+        <section class="main-stock">
+          <div class="main-stock-top">
+            <div class="main-stock-top-item">
+              <h2 class="main-stock-top-item__title">Малинка даром!</h2>
+              <p class="main-stock-top-item__description">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового
+                варенья бесплатно
+              </p>
+              <a href="#" class="btn main-stock-top-item__btn">Хочу варенье</a>
+            </div>
+            <div class="main-stock-top-item">
+                <h2 class="main-stock-top-item__title">Шоколадки даром!</h2>
+                <p class="main-stock-top-item__description">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+                  шоколадной присыпки совершенно бесплатно
+                </p>
+                <a href="#" class="btn main-stock-top-item__btn">Хочу шоколадки!</a>
+            </div>
+          </div>
+          <div class="main-stock-bottom">
+            <ul class="main-stock-bottom-list">
+              <li class="main-stock-bottom-list-item">
+                <div class="main-stock-bottom-list-item-block">
+                  <img class="main-stock-bottom-list-item-block__before" src="img/hit.png" width="1" height="1" alt="Хит">
+                  <img class="main-stock-bottom-list-item-block__img" src="img/Сливочное.png" width="1" height="1" alt="Сливочное">
+                  <p class="main-stock-bottom-list-item-block__price">310 ₽<span>/кг</span></p>
+                </div>
+                <p class="main-bottom_stock-list-item__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              </li>
+              <!-- еще таких 3 таких тут -->
+            </ul>
+          </div>
+        </section>
+        <section class="main-about">
+          <h2 class="main-about__title">
+              Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства
+              на развес
+          </h2>
+          <ul class="main-about-list">
+            <li class="main-about-list__item">Все наше мороженное...</li>
+            <li class="main-about-list__item">Закупка инградиентов...</li>
+            <li class="main-about-list__item">Для приготовления мороженного...</li>
+            <li class="main-about-list__item">Доставка нашего мороженного...</li>
+          </ul>
+        </section>
+        <div class="main-widjets">
+          <article class="main-widjets-news">
+            <h2 class="main-widjets-news__title">Новое в нашем блоке</h2>
+            <p class="main-widjets-news__description">
+              10 способов сервировки фруктовых щербетов к столу
+            </p>
+          </article>
+          <section class="main-widjets-subscribe">
+            <h2 class="visible-hidden">Подпишитесь на рассылку GlaccyShop</h2>
+            <p class="main-widjets-subscribe__description">
+              Подпишитесь на нагу сладкую рассылку и будете всегда в курсе всего самого вкусного,что
+              у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) 
+            </p>
+            <form class="main-widjets-subscribe-form" action="subscribe.php" method="POST">
+              <input class="main-widjets-subscribe__input_email" type="text" placeholder="Электронная почта" name="email"/>
+              <button class="btn main-widjets-subscribe__btn">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </div>
+      <section class="main-address">
+          <h2 class="visible-hidden">Адресс производства мороженного GlaccyShop</h2>
+          <iframe class="main-address__iframe" src="#"></iframe>
+          <div class="container">
+            <div class="main-address-info">
+              <p>Адрес главного офиса и офлайн магазина:<br>
+              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
+              </p>
+              <p>Для заказов по телефону:<br>
+              <a href="tel:+88124502525">8 812 450-25-25</a><br>
+              (с 10 до 20 ежедневно)</p>
+            </div>
+            <button class="btn main-address-btn"></button>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li class="footer-social-list__item"><a href="#">Twitter</a></li>
+            <li class="footer-social-list__item"><a href="#">Instagram</a></li>
+            <li class="footer-social-list__item"><a href="#">Facebook</a></li>
+            <li class="footer-social-list__item"><a href="#">Vkontakte</a></li>
+          </ul> 
+        </div>
+        <ul class="footer-links">
+          <li class="footer-links__item footer-links__item_bold"><a href="#">Для поставщиков</a></li>
+          <li class="footer-links__item"><a href="#">Наши документы</a></li>
+          <li class="footer-links__item"><a href="#">О производстве</a></li>
+          <li class="footer-links__item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+        <div class="footer-copyright">
+          <a href="#" class="footer-copyright__logo">
+            <img src="img/HtmlAcademy.png" width="1" height="1" alt="Логотип HtmlAcademy"/>
+          </a>
+          <p class="footer-copyright__title">Сделано в <a href="#">HTML Academy</a> Ⓒ 2017</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси Каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+        <img class="header__logo" src="img/logo.png" width="1" height="1" alt="Логотип GlaccyShop"/>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list__item header-nav-list-catalog header-nav-list__item_active">Каталог
+              <ul class="header-nav-list-catalog-list">
+                <li class="header-nav-list-catalog-list__item"><a href="#">Новинки</a></li>
+                <li class="header-nav-list-catalog-list__item"><a href="catalog.html">Сливочное</a></li>
+                <li class="header-nav-list-catalog-list__item"><a href="#">Щербеты</a></li>
+                <li class="header-nav-list-catalog-list__item"><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="header-nav-list__item">Доставка и оплата</li>
+            <li class="header-nav-list__item">О компании</li>
+          </ul>
+        </nav>
+        <div class="header-actioins">
+          <button class="header-actioins__search">Поиск</button>
+          <button class="header-actioins__login">Вход</button>
+          <button class="header-actioins__basket header-actioins__basket_active">2 товара</button>
+        </div>
+        <p class="header-call">
+          <span class="header-call__title">С 10 до 20, ежедневно</span><br>
+          <a class="header-call__tel" href="tel:+8812450-25-25">8 812 450-25-25</a>
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <nav class="main-breadcrumbs">
+            <ul class="main-breadcrumbs-list">
+              <li class="main-breadcrumbs-list__item"><a href="/">Главная »</a></li>
+              <li class="main-breadcrumbs-list__item"><a href="#">Каталог »</a></li>
+              <li class="main-breadcrumbs-list__item">Сливочное</li>
+            </ul>
+        </nav>
+        <h1 class="main__title">Сливочное мороженное</h1>
+        <section class="main-filter">
+          <h2 class="visible-hidden">Фильтр сливочного мороженного</h2>
+          <form class="" method="POST" action="fitler.php">
+            <!-- форму же нужно пока что? -->
+          </form>
+        </section>
+        <section class="main-stock">
+          <h2 class="visible-hidden">Каталог сливочного мороженного</h2>
+          <div class="main-stock-bottom">
+              <ul class="main-stock-bottom-list">
+              <li class="main-stock-bottom-list-item">
+                  <div class="main-stock-bottom-list-item-block">
+                    <img class="main-stock-bottom-list-item-block__img" src="img/Сливочное.png" width="1" height="1" alt="Сливочное">
+                    <p class="main-stock-bottom-list-item-block__price">310 ₽<span>/кг</span></p>
+                  </div>
+                  <p class="main-bottom_stock-list-item__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              </li>
+              <!-- еще таких 7 таких тут -->
+              </ul>
+          </div>
+        </section>
+        <nav class="main-pagination">
+          <ul class="main-pagination-list">
+            <li class="main-pagination-list__item main-breadcrumbs-list__arrow_back main-breadcrumbs-list__arrow_disable"></li>
+            <li class="main-pagination-list__item">1</li>
+            <li class="main-pagination-list__item"><a href="#">2</a></li>
+            <li class="main-pagination-list__item"><a href="#">3</a></li>
+            <li class="main-pagination-list__item"><a href="#">4</a></li>
+            <li class="main-pagination-list__item"><a href="#">5</a></li>
+            <li class="main-pagination-list__item main-breadcrumbs-list__arrow_forward"><a href="#"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li class="footer-social-list__item"><a href="#">Twitter</a></li>
+            <li class="footer-social-list__item"><a href="#">Instagram</a></li>
+            <li class="footer-social-list__item"><a href="#">Facebook</a></li>
+            <li class="footer-social-list__item"><a href="#">Vkontakte</a></li>
+          </ul> 
+        </div>
+        <ul class="footer-links">
+          <li class="footer-links__item footer-links__item_bold"><a href="#">Для поставщиков</a></li>
+          <li class="footer-links__item"><a href="#">Наши документы</a></li>
+          <li class="footer-links__item"><a href="#">О производстве</a></li>
+          <li class="footer-links__item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+        <div class="footer-copyright">
+          <a href="#" class="footer-copyright__logo">
+            <img src="img/HtmlAcademy.png" width="1" height="1" alt="Логотип HtmlAcademy"/>
+          </a>
+          <p class="footer-copyright__title">Сделано в <a href="#">HTML Academy</a> Ⓒ 2017</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
