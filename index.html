@@ -9,7 +9,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <img class="logo" src="img/logo.png" width="154" height="64" alt="Логотип GlaccyShop"/>
+        <a class="logo">
+          <img class="logo__img" src="img/logo.png" width="154" height="64" alt="Логотип GlaccyShop"/>
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item nav-dropdown nav__item--active"><a class="nav__link" href="#" title="Каталог">Каталог</a>
@@ -20,26 +22,26 @@
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Мелорин">Мелорин</a></li>
               </ul>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="#" title="Доставка и оплата">Доставка и оплата</a></li>
+            <li class="nav__item"><a class="nav__link" href="#" title="О компании">О компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
           <div class="user-block__item">
             <a class="user-block__link user-block__link--search" href="#" title="Поиск"><span class="visible-hidden">Поиск</span></a>
-            <form class="user-block__search-form visible-hidden" method="POST" action=".">
+            <form class="user-block__search-form" method="POST" action=".">
               <input class="user-block__input" type="text" name="search" placeholder="Что ищем?"/>
             </form>
           </div>
           <div class="user-block__item">
             <a class="user-block__link user-block__link--login" href="#" title="Вход">Вход</a>
-            <form class="user-block__login-form visible-hidden" method="POST" action=".">
+            <form class="user-block__login-form" method="POST" action=".">
               <input class="user-block__input" type="email" name="email" placeholder="Электронная почта"/>
               <input class="user-block__input" type="password" name="password" placeholder="Пароль"/>
               <button class="btn user-block__btn" type="submit">Войти</button>
               <p class="user-block-login-links">
                 <a class="user-block-login-links__item" href="#" title="Забыли пароль?">Забыли пароль?</a>
-                <a class="user-block-login-links__item" href="#" title="Новая егистрация">Новая егистрация</a>
+                <a class="user-block-login-links__item" href="#" title="Новая регистрация">Новая регистрация</a>
               </p>
             </form>
           </div>
@@ -55,19 +57,13 @@
     </header>
     <main class="main">
       <div class="container">
-        <h1 class="visible-hidden">Магазин мороженного GlaccyShop</h1>
+        <h1 class="visible-hidden">Магазин мороженого GlaccyShop</h1>
         <section class="slider">
-          <h2 class="visible-hidden">Слайдер мороженного</h2>
+          <h2 class="visible-hidden">Слайдер мороженого GlaccyShop</h2>
           <div class="slider-buttons">
-            <p class="slider-buttons__item">
-              <input class="slider-buttons__input" type="radio" name="slider" id="slider-1" checked />
-            </p>
-            <p class="slider-buttons__item">
-              <input class="slider-buttons__input" type="radio" name="slider" id="slider-2"/>
-            </p>
-            <p class="slider-buttons__item">
-              <input class="slider-buttons__input" type="radio" name="slider" id="slider-3"/>
-            </p>
+            <input class="slider-buttons__input" type="radio" name="slider" id="slider-1" checked />
+            <input class="slider-buttons__input" type="radio" name="slider" id="slider-2"/>
+            <input class="slider-buttons__input" type="radio" name="slider" id="slider-3"/>
           </div>
           <ul class="slider-list">
             <li class="slider-list__item">
@@ -94,7 +90,7 @@
           <h2 class="visible-hidden">Вкусности даром!</h2>
           <div class="deals__item">
             <h3 class="deals__title">Малинка даром!</h3>
-            <p class="deals__description">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно
+            <p class="deals__description">При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно
             </p>
             <a href="#" class="btn deals__btn" title="Хочу варенье!">Хочу варенье!</a>
           </div>
@@ -106,39 +102,35 @@
           </div>
         </section>
         <section class="stock">
-          <h2 class="visible-hidden">Каталог самых покупаемых мороженных</h2>
+          <h2 class="visible-hidden">Каталог самых покупаемых мороженых</h2>
           <ul class="stock-list">
             <li class="stock-list-item">
               <div class="stock-list-item__block">
-                <span class="visible-hidden">Хит</span>
                 <img class="stock-list-item__img" src="img/Сливочное с апельсиновым.png" width="267" height="267" alt="Сливочное с апельсиновым">
                 <p class="stock-list-item__price">310 ₽<span class="stock-list-item-block__weight">/кг</span></p>
               </div>
-              <a class="stock-list-item__description" href="#" title="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a class="stock-list-item__description" href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
-                <span class="visible-hidden">Хит</span>
                 <img class="stock-list-item__img" src="img/Сливочно-кофейное.png" width="267" height="267" alt="Сливочно-кофейное">
                 <p class="stock-list-item__price">380 ₽<span class="stock-list-item-block__weight">/кг</span></p>
               </div>
-              <a class="stock-list-item__description" href="#" title="">Сливочно-кофейное с кусочками шоколада</a>
+              <a class="stock-list-item__description" href="#" title="Сливочно-кофейное с кусочками шоколада">Сливочно-кофейное с кусочками шоколада</a>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
-                <span class="visible-hidden">Хит</span>
                 <img class="stock-list-item__img" src="img/Сливочно-клубничное.png" width="267" height="267" alt="Сливочно-клубничное">
                 <p class="stock-list-item__price">355 ₽<span class="stock-list-item-block__weight">/кг</span></p>
               </div>
-              <a class="stock-list-item__description" href="#" title="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a class="stock-list-item__description" href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
-                <span class="visible-hidden">Хит</span>
                 <img class="stock-list-item__img" src="img/Сливочное крем-брюле.png" width="267" height="267" alt="Сливочное крем-брюле">
                 <p class="stock-list-item__price">415 ₽<span class="stock-list-item-block__weight">/кг</span></p>
               </div>
-              <a class="stock-list-item__description" href="#" title="">Сливочное крем-брюле с карамельной подливкой</a>
+              <a class="stock-list-item__description" href="#" title="Сливочное крем-брюле с карамельной подливкой">Сливочное крем-брюле с карамельной подливкой</a>
             </li>
           </ul>
         </section>
@@ -154,11 +146,11 @@
         <div class="news">
           <article class="news-article">
             <h2 class="news-article__title">Новое в нашем блоке</h2>
-            <p class="news-article__description">10 способов сервировки фруктовых щербетов к столу</p>
+            <a class="news-article__lead" href="#" title="10 способов сервировки фруктовых щербетов к столу">10 способов сервировки фруктовых щербетов к столу</a>
           </article>
           <section class="news-subscribe">
             <h2 class="visible-hidden">Подпишитесь на рассылку GlaccyShop</h2>
-            <p class="news-subscribe__description">Подпишитесь на нагу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+            <p class="news-subscribe__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
             <form class="news-subscribe__form" method="POST" action=".">
               <input class="news-subscribe__input" type="email" name="email" placeholder="Электронная почта"/>
               <button class="btn news-subscribe__btn" type="submit" >Отправить</button>
@@ -167,7 +159,7 @@
         </div>
       </div>
       <section class="address">
-        <h2 class="visible-hidden">Адресс производства мороженного GlaccyShop</h2>
+        <h2 class="visible-hidden">Адресс производства мороженого GlaccyShop</h2>
         <iframe class="address__iframe" src="#"></iframe>
         <div class="address-info">
           <p class="address-info__text">Адрес главного офиса и офлайн магазина:<br>
@@ -178,22 +170,22 @@
             (с 10 до 20 ежедневно)
           </p>
         </div>
-        <button class="btn address__btn" type="button">Форма обратной связи</button>
+        <a class="btn address__btn" href="#" title="Форма обратной связи">Форма обратной связи</a>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <ul class="social">
-          <li class="social__item"><a class="social__link" href="#">Twitter</a></li>
-          <li class="social__item"><a class="social__link" href="#">Instagram</a></li>
-          <li class="social__item"><a class="social__link" href="#">Facebook</a></li>
-          <li class="social__item"><a class="social__link" href="#">Vkontakte</a></li>
+          <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#">Instagram</a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">Facebook</a></li>
+          <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Vkontakte</a></li>
         </ul> 
         <ul class="footer-links">
-          <li class="footer-links__item footer-links__item--bold"><a href="#">Для поставщиков</a></li>
-          <li class="footer-links__item"><a href="#">Наши документы</a></li>
-          <li class="footer-links__item"><a href="#">О производстве</a></li>
-          <li class="footer-links__item"><a href="#">Экологические стандарты</a></li>
+          <li class="footer-links__item footer-links__item--bold"><a href="#" title="Для поставщиков">Для поставщиков</a></li>
+          <li class="footer-links__item"><a href="#" title="Наши документы">Наши документы</a></li>
+          <li class="footer-links__item"><a href="#" title="О производстве">О производстве</a></li>
+          <li class="footer-links__item"><a href="#" title="Экологические стандарты">Экологические стандарты</a></li>
         </ul>
         <div class="copyright">
           <a href="#" class="copyright-logo">
