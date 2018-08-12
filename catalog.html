@@ -9,7 +9,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <img class="logo" src="img/logo.png" width="154" height="64" alt="Логотип GlaccyShop"/>
+        <a class="logo__link" href="index.html" title="На главную страницу">
+          <img class="logo" src="img/logo.png" width="154" height="64" alt="Логотип GlaccyShop"/>
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item nav-dropdown"><a class="nav__link" href="#" title="Каталог">Каталог</a>
@@ -25,69 +27,73 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="user-block__item user-block-search" href="#" title="Поиск"><span class="visible-hidden">Поиск</span></a>
-          <form class="user-block__search visible-hidden" method="POST" action="search.php">
-            <input class="user-block__input" type="text" name="search" placeholder="Что ищем?"/>
-          </form>
-          <a class="user-block__item user-block-login" href="#" title="Вход">Вход</a>
-          <form class="user-block__login visible-hidden" method="POST" action="login.php">
-            <input class="user-block__input" type="text" name="email" placeholder="Электронная почта"/>
-            <input class="user-block__input" type="password" name="password" placeholder="Пароль"/>
-            <button class="btn user-block__btn" type="submit">Войти</button>
-            <p class="user-block__links">
-              <a class="user-block-login__item" href="#" title="Забыли пароль?">Забыли пароль?</a>
-              <a class="user-block-login__item" href="#" title="Новая егистрация">Новая егистрация</a>
-            </p>
-          </form>
-          <a class="user-block__item user-block-basket" href="#" title="Корзина"></a>
-          <div class="user-block-basket visible-hidden">
-            <table>
-            <tr>
-                <th>
-                  <button class="btn-close">Удалить товар из корзины</button>
-                </th>
-                <th>
-                  <img src="сливки-мини.png" width="33" height="33" alt="сливки-мини"/>
-                </th>
-                <th>Пломбир с апельсиновым джемом</th>
-                <th>1,5 кг х <span>200 руб.</span></th>
-                <th>300 руб.</th>
-            </tr>
-            <tr>
-                <th>
-                  <button class="btn-close">Удалить товар из корзины</button>
-                </th>
-                <th>
-                  <img src="Клубничный пломбир-мини.png" width="33" height="33" alt="Клубничный пломбир-мини"/>
-                </th>
-                <th>Клубничный пломбир с присыпкой  из белого шоколада</th>
-                <th>1,5 кг х <span>300 руб.</span></th>
-                <th>450 руб.</th>
-            </tr>
-            </table>
-            <span class="user-block-basket__result">Итого: 750 руб.</span>
-            <a class="btn uset-block-basket__btn" href="#" title="Оформить заказ">Оформить заказ</a>
+          <div class="user-block__item">
+            <a class="user-block__link user-block__link--search" href="#" title="Поиск"><span class="visible-hidden">Поиск</span></a>
+            <form class="user-block__search-form visible-hidden" method="POST" action=".">
+              <input class="user-block__input" type="text" name="search" placeholder="Что ищем?"/>
+            </form>
+          </div>
+          <div class="user-block__item">
+            <a class="user-block__link user-block__link--login" href="#" title="Вход">Вход</a>
+            <form class="user-block__login-form visible-hidden" method="POST" action=".">
+              <input class="user-block__input" type="email" name="email" placeholder="Электронная почта"/>
+              <input class="user-block__input" type="password" name="password" placeholder="Пароль"/>
+              <button class="btn user-block__btn" type="submit">Войти</button>
+              <p class="user-block-login-links">
+                <a class="user-block-login-links__item" href="#" title="Забыли пароль?">Забыли пароль?</a>
+                <a class="user-block-login-links__item" href="#" title="Новая егистрация">Новая егистрация</a>
+              </p>
+            </form>
+          </div>
+          <div class="user-block__item">
+            <a class="user-block__link user-block__link--basket" href="#" title="Корзина">2 товара</a>
+            <div class="user-block-basket visible-hidden">
+              <table>
+                <tr>
+                    <th>
+                      <button class="btn-close" type="button">Удалить товар из корзины</button>
+                    </th>
+                    <th>
+                      <img src="сливки-мини.png" width="33" height="33" alt="сливки-мини"/>
+                    </th>
+                    <th>Пломбир с апельсиновым джемом</th>
+                    <th>1,5 кг х <span>200 руб.</span></th>
+                    <th>300 руб.</th>
+                </tr>
+                <tr>
+                    <th>
+                      <button class="btn-close" type="button">Удалить товар из корзины</button>
+                    </th>
+                    <th>
+                      <img src="Клубничный пломбир-мини.png" width="33" height="33" alt="Клубничный пломбир-мини"/>
+                    </th>
+                    <th>Клубничный пломбир с присыпкой  из белого шоколада</th>
+                    <th>1,5 кг х <span>300 руб.</span></th>
+                    <th>450 руб.</th>
+                </tr>
+              </table>
+              <span class="user-block-basket__result">Итого: 750 руб.</span>
+              <a class="btn uset-block-basket__btn" href="#" title="Оформить заказ">Оформить заказ</a>
+            </div> 
           </div>
         </div>
         <p class="contacts">
-          <span class="contacts__worktime">С 10 до 20, ежедневно</span><br>
-          <a class="contacts__tel" href="tel:+8812450-25-25">8 812 450-25-25</a>
+          <span class="contacts__worktime">С 10 до 20, ежедневно</span>
+          <a class="contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
         </p>
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/" title="Главная">Главная</a></li>
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="Каталог">Каталог</a></li>
-              <li class="breadcrumbs__item">Сливочное</li>
-            </ul>
-          </div>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/" title="Главная">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="Каталог">Каталог</a></li>
+          <li class="breadcrumbs__item">Сливочное</li>
+        </ul>
         <h1 class="title">Сливочное мороженное</h1>
         <section class="filter">
           <h2 class="visible-hidden">Фильтр сливочного мороженного</h2>
-          <form class="" method="POST" action="fitler.php">
+          <form class="" method="POST" action=".">
             <!-- форму же нужно пока что? -->
           </form>
         </section>
@@ -100,7 +106,7 @@
                 <p class="stock-list-item__price">310 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -108,7 +114,7 @@
                 <p class="stock-list-item__price">380 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочно-кофейное с кусочками шоколада</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -116,7 +122,7 @@
                 <p class="stock-list-item__price">355 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -124,7 +130,7 @@
                 <p class="stock-list-item__price">415 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочное крем-брюле с карамельной подливкой</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -132,7 +138,7 @@
                 <p class="stock-list-item__price">325 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочное с брусничным джемом</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -140,7 +146,7 @@
                 <p class="stock-list-item__price">410 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочно-черничное с цельными ягодами черники</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -148,7 +154,7 @@
                 <p class="stock-list-item__price">375 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочно-лимонное с карамельной присыпкой</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -156,7 +162,7 @@
                 <p class="stock-list-item__price">320 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочное с шоколадной стружкой</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -164,7 +170,7 @@
                 <p class="stock-list-item__price">440 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочно-ванильное с кусочками шоколада</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -172,7 +178,7 @@
                 <p class="stock-list-item__price">435 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочноe с ментоловым сиропом</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -180,7 +186,7 @@
                 <p class="stock-list-item__price">355 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочное с кусочками черного шоколада</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
             <li class="stock-list-item">
               <div class="stock-list-item__block">
@@ -188,31 +194,29 @@
                 <p class="stock-list-item__price">420 ₽<span class="stock-list-item__weight">/кг</span></p>
               </div>
               <a class="stock-list-item__description" href="#" title="">Сливочное с мятным сиропом</a>
-              <button class="btn stock-list-item__btn visible-hidden">Быстрый просмотр</button>
+              <button class="btn stock-list-item__btn visible-hidden" type="button">Быстрый просмотр</button>
             </li>
           </ul>
         </section>
         <ul class="pagination">
-          <li class="pagination__item pagination-arrow pagination-arrow--back pagination-arrow--disable"><a title=""></a></li>
-          <li class="pagination__item"><a class="pagination__link" title="">1</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#" title="">2</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#" title="">3</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#" title="">4</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#" title="">5</a></li>
-          <li class="pagination__item pagination-arrow pagination-arrow--forward"><a href="#" title=""></a></li>
+          <li class="pagination__arrow pagination__arrow--prev pagination__arrow--disable"><a title="Предыдущая страница каталога"></a></li>
+          <li class="pagination__item"><a class="pagination__link" title="1 страница каталога">1</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#" title="2 страница каталога">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#" title="3 страница каталога">3</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#" title="4 страница каталога">4</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#" title="5 страница каталога ">5</a></li>
+          <li class="pagination__arrow pagination__arrow--next"><a href="#" title="Следующая страница каталога"></a></li>
         </ul>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item"><a class="social__link" href="#">Twitter</a></li>
-            <li class="social__item"><a class="social__link" href="#">Instagram</a></li>
-            <li class="social__item"><a class="social__link" href="#">Facebook</a></li>
-            <li class="social__item"><a class="social__link" href="#">Vkontakte</a></li>
-          </ul> 
-        </div>
+        <ul class="social">
+          <li class="social__item"><a class="social__link" href="#">Twitter</a></li>
+          <li class="social__item"><a class="social__link" href="#">Instagram</a></li>
+          <li class="social__item"><a class="social__link" href="#">Facebook</a></li>
+          <li class="social__item"><a class="social__link" href="#">Vkontakte</a></li>
+        </ul> 
         <ul class="footer-links">
           <li class="footer-links__item footer-links__item--bold"><a href="#">Для поставщиков</a></li>
           <li class="footer-links__item"><a href="#">Наши документы</a></li>
