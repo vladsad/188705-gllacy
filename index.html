@@ -29,15 +29,18 @@
         <div class="user-block">
           <div class="user-block__item">
             <a class="user-block__link user-block__link--search" href="#" title="Поиск"><span class="visible-hidden">Поиск</span></a>
-            <form class="user-block__search-form" method="POST" action=".">
-              <input class="user-block__input" type="text" name="search" placeholder="Что ищем?"/>
+            <form class="user-block__search-form" method="POST" action="https://echo.htmlacademy.ru">
+              <label class="visible-hidden" for="user-block-search">Ввод текста поиска</label>
+              <input class="user-block__input" type="text" name="user-block-search" id="user-block-search" placeholder="Что ищем?"/>
             </form>
           </div>
           <div class="user-block__item">
             <a class="user-block__link user-block__link--login" href="#" title="Вход">Вход</a>
-            <form class="user-block__login-form" method="POST" action=".">
-              <input class="user-block__input" type="email" name="email" placeholder="Электронная почта"/>
-              <input class="user-block__input" type="password" name="password" placeholder="Пароль"/>
+            <form class="user-block__login-form" method="POST" action="https://echo.htmlacademy.ru">
+              <label class="visible-hidden" for="user-block-email">Ввод электронной почты</label>
+              <input class="user-block__input" type="email" name="email" id="user-block-email" placeholder="Электронная почта"/>
+              <label class="visible-hidden" for="user-block-password">Ввод пароля</label>
+              <input class="user-block__input" type="password" name="password" id="user-block-password" placeholder="Пароль"/>
               <button class="btn user-block__btn" type="submit">Войти</button>
               <p class="user-block-login-links">
                 <a class="user-block-login-links__item" href="#" title="Забыли пароль?">Забыли пароль?</a>
@@ -82,9 +85,9 @@
               <a class="btn slider-list__btn" href="#" title="Давайте оба">Давайте оба</a>
             </li>
           </ul>
-          <label class="slider__checkmark" for="slider-1"></label>
-          <label class="slider__checkmark" for="slider-2"></label>
-          <label class="slider__checkmark" for="slider-3"></label>
+          <label class="slider__checkmark" for="slider-1">Слайдер №1</label>
+          <label class="slider__checkmark" for="slider-2">Слайдер №2</label>
+          <label class="slider__checkmark" for="slider-3">Слайдер №3</label>
         </section>
         <section class="deals">
           <h2 class="visible-hidden">Вкусности даром!</h2>
@@ -151,8 +154,9 @@
           <section class="news-subscribe">
             <h2 class="visible-hidden">Подпишитесь на рассылку GlaccyShop</h2>
             <p class="news-subscribe__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-            <form class="news-subscribe__form" method="POST" action=".">
-              <input class="news-subscribe__input" type="email" name="email" placeholder="Электронная почта"/>
+            <form class="news-subscribe__form" method="POST" action="https://echo.htmlacademy.ru">
+              <label class="visible-hidden" for="news-subscribe-email">Ввод вашей почты</label>
+              <input class="news-subscribe__input" type="email" name="news-subscribe-email" id="news-subscribe-email" placeholder="Электронная почта"/>
               <button class="btn news-subscribe__btn" type="submit" >Отправить</button>
             </form>
           </section>
@@ -196,16 +200,19 @@
         </div>
       </div>
     </footer>
-    <div class="modal feedback">
+    <section class="modal feedback">
       <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
       <button class="feedback__close" type="button">Закрыть</button>
-      <form class="feedback__form" method="POST" action=".">
-        <input class="feedback__input" type="text" name="name" placeholder="Как вас зовут?"/>
-        <input class="feedback__input" type="email" name="email" placeholder="Ваша почта для ответа?"/>
-        <textarea class="feedback__input feedback__input--textarea" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <form class="feedback__form" method="POST" action="https://echo.htmlacademy.ru">
+        <label class="visible-hidden" for="feedback-name">Ввод вашего имени</label>
+        <input class="feedback__input" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?"/>
+        <label class="visible-hidden" for="feedback-email">Ввод вашей почты</label>
+        <input class="feedback__input" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"/>
+        <label class="visible-hidden" for="feedback-msg">Ввод вашего сообщения</label>
+        <textarea class="feedback__input feedback__input--textarea" rows="10" name="feedback-msg" id="feedback-msg" placeholder="Напишите что-нибудь..."></textarea>
         <button class="btn feedback__btn" type="submit">Отправить</button>
       </form> 
-    </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
