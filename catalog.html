@@ -30,14 +30,17 @@
           <div class="user-block__item">
             <a class="user-block__link user-block__link--search" href="#" title="Поиск"><span class="visible-hidden">Поиск</span></a>
             <form class="user-block__search-form" method="POST" action="https://echo.htmlacademy.ru">
-              <input class="user-block__input" type="text" name="search" placeholder="Что ищем?"/>
+              <label class="visible-hidden" for="user-block-search">Ввод текста поиска</label>
+              <input class="user-block__input" type="text" name="user-block-search" id="user-block-search" placeholder="Что ищем?"/>
             </form>
           </div>
           <div class="user-block__item">
             <a class="user-block__link user-block__link--login" href="#" title="Вход">Вход</a>
             <form class="user-block__login-form" method="POST" action="https://echo.htmlacademy.ru">
-              <input class="user-block__input" type="email" name="email" placeholder="Электронная почта"/>
-              <input class="user-block__input" type="password" name="password" placeholder="Пароль"/>
+              <label class="visible-hidden" for="user-block-email">Ввод электронной почты</label>
+              <input class="user-block__input" type="email" name="email" id="user-block-email" placeholder="Электронная почта"/>
+              <label class="visible-hidden" for="user-block-password">Ввод пароля</label>
+              <input class="user-block__input" type="password" name="password" id="user-block-password" placeholder="Пароль"/>
               <button class="btn user-block__btn" type="submit">Войти</button>
               <p class="user-block-login-links">
                 <a class="user-block-login-links__item" href="#" title="Забыли пароль?">Забыли пароль?</a>
@@ -93,8 +96,68 @@
         <h1 class="title">Сливочное мороженое</h1>
         <section class="filter">
           <h2 class="visible-hidden">Фильтр сливочного мороженого</h2>
-          <form class="" method="POST" action="https://echo.htmlacademy.ru">
-            <!-- форму же нужно пока что? -->
+          <form class="filter__form" method="POST" action="https://echo.htmlacademy.ru">
+            <p class="filter-sort">
+              <label class="filter-sort__title" for="filter-sort">Сортировка:</label>
+              <select class="filter-sort__list" name="filter-sort" id="filter-sort">
+                  <option class="filter-sort__item" value="price">По цене</option> 
+                  <option class="filter-sort__item" value="popularity" selected>По популярности</option>
+                  <option class="filter-sort__item" value="latest">По новизне</option>
+              </select>
+            </p>
+            <fieldset class="filter-price">
+              <legend class="filter-price__title">Цена: 100 руб. - 500 руб.</legend>
+              <div class="filter-price-block">
+                <!-- тут 2 спана с табиндексом + полоска чтобы отобразить состояние между ними?-->
+              </div>
+            </fieldset>
+            <fieldset class="filter-fat">
+              <legend class="filter-fat__title">Жирность:</legend>
+              <ul class="filter-fat__list">
+                <li class="filter-fat__item">
+                  <input class="visually-hidden" type="radio" name="filter-fat" value="0" id="filter-fat-0">
+                  <label class="filter-fat__label" for="filter-fat-0">0%</label>
+                </li>
+                <li class="filter-fat__item">
+                  <input class="visually-hidden" type="radio" name="filter-fat" value="10" id="filter-fat-10" checked>
+                  <label class="filter-fat__label" for="filter-fat-10">до 10%</label>
+                </li>
+                <li class="filter-fat__item">
+                  <input class="visually-hidden" type="radio" name="filter-fat" value="30" id="filter-fat-30">
+                  <label class="filter-fat__label" for="filter-fat-30">до 30%</label>
+                </li>
+                <li class="filter-fat__item">
+                  <input class="visually-hidden" type="radio" name="filter-fat" value="31" id="filter-fat-31">
+                  <label class="filter-fat__label" for="filter-fat-31">выше 30%</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-fillers">
+              <legend class="filter-fillers__title">Наполнители:</legend>
+              <ul class="filter-fillers__list">
+                <li class="filter-fillers__item">
+                  <input class="visually-hidden" type="checkbox" name="filter-fillers-chocolate" id="filter-fillers-chocolate" checked>
+                  <label class="filter-fillers__label" for="filter-fillers-chocolate">шоколадные</label>
+                </li>
+                <li class="filter-fillers__item">
+                  <input class="visually-hidden" type="checkbox" name="filter-fillers-sugar" id="filter-fillers-sugar" checked>
+                  <label class="filter-fillers__label" for="filter-fillers-sugar">сахарные присыпки</label>
+                </li>
+                <li class="filter-fillers__item">
+                  <input class="visually-hidden" type="checkbox" name="filter-fillers-fruit" id="filter-fillers-fruit">
+                  <label class="filter-fillers__label" for="filter-fillers-fruit">фрукты</label>
+                </li>
+                <li class="filter-fillers__item">
+                  <input class="visually-hidden" type="checkbox" name="filter-fillers-syrups" id="filter-fillers-syrups">
+                  <label class="filter-fillers__label" for="filter-fillers-syrups">сиропы</label>
+                </li>
+                <li class="filter-fillers__item">
+                  <input class="visually-hidden" type="checkbox" name="filter-fillers-jams" id="filter-fillers-jams">
+                  <label class="filter-fillers__label" for="filter-fillers-jams">джемы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="btn filter__btn" type="submit">Применить</button>
           </form>
         </section>
         <section class="stock">
