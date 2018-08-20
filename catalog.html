@@ -97,18 +97,18 @@
         <section class="filter">
           <h2 class="visible-hidden">Фильтр сливочного мороженого</h2>
           <form class="filter__form" method="POST" action="https://echo.htmlacademy.ru">
-            <p class="filter-sort">
-              <label class="filter-sort__title" for="filter-sort">Сортировка:</label>
+            <fieldset class="filter-sort">
+              <legend class="filter-sort__title" for="filter-sort">Сортировка:</legend>
               <select class="filter-sort__list" name="filter-sort" id="filter-sort">
                   <option class="filter-sort__item" value="price">По цене</option> 
                   <option class="filter-sort__item" value="popularity" selected>По популярности</option>
                   <option class="filter-sort__item" value="latest">По новизне</option>
               </select>
-            </p>
+            </fieldset>
             <fieldset class="filter-price">
-              <legend class="filter-price__title">Цена: 100 руб. - 500 руб.</legend>
+              <legend class="filter-price__title">Цена: <span>100</span> руб. - <span>500</span> руб.</legend>
               <div class="filter-price-block">
-                <!-- тут 2 спана с табиндексом + полоска чтобы отобразить состояние между ними?-->
+                <!--  -->
               </div>
             </fieldset>
             <fieldset class="filter-fat">
