@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,11 +15,13 @@
         </a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item nav-dropdown nav__item--active"><a class="nav__link" href="#" title="Каталог">Каталог</a>
+            <li class="nav__item nav-dropdown">
+              <a class="nav__link" href="#" title="Каталог">Каталог</a>
               <ul class="nav-dropdown__list">
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Новинки">Новинки</a></li>
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="catalog.html" title="Сливочное">Сливочное</a></li>
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Щербеты">Щербеты</a></li>
+                <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Фруктовый лёд">Фруктовый лёд</a></li>
                 <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Мелорин">Мелорин</a></li>
               </ul>
             </li>
@@ -70,17 +73,17 @@
             <li class="slider-list__item">
               <p class="slider-list__title">Крем брюле и пломбир с малиновым джемом</p>
               <img class="slider-list__img" src="img/png/slider-1.png" width="1045" height="881" alt="Крем брюле и пломбир с малиновым джемом"/>
-              <a class="btn slider-list__btn" href="#" title="Давайте оба">Давайте оба</a>
+              <a class="btn slider-list__btn" href="#" title="Давайте оба">Давайте оба!</a>
             </li>
             <li class="slider-list__item">
               <p class="slider-list__title">Шоколадный пломбир и лимонный сорбет</p>
               <img class="slider-list__img" src="img/png/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет"/>
-              <a class="btn slider-list__btn" href="#" title="Давайте оба">Давайте оба</a>
+              <a class="btn slider-list__btn" href="#" title="Давайте оба">Давайте оба!</a>
             </li>
             <li class="slider-list__item">
               <p class="slider-list__title">Пломбир с помадкой и клубничный щербет</p>
               <img class="slider-list__img" src="img/png/slider-3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет"/>
-              <a class="btn slider-list__btn" href="#" title="Давайте оба">Давайте оба</a>
+              <a class="btn slider-list__btn" href="#" title="Давайте оба">Давайте оба!</a>
             </li>
           </ul>
           <label class="slider__checkmark" for="slider-1">Слайдер №1</label>
@@ -89,13 +92,13 @@
         </section>
         <section class="deals">
           <h2 class="visible-hidden">Вкусности даром!</h2>
-          <div class="deals__item">
+          <div class="deals__item deals__item--raspberries">
             <h3 class="deals__title">Малинка даром!</h3>
             <p class="deals__description">При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно
             </p>
             <a href="#" class="btn deals__btn" title="Хочу варенье!">Хочу варенье!</a>
           </div>
-          <div class="deals__item">
+          <div class="deals__item deals__item--chocolate">
               <h3 class="deals__title">Шоколадки даром!</h3>
               <p class="deals__description">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно
               </p>
