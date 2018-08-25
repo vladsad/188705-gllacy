@@ -54,28 +54,28 @@
           <div class="user-block__item">
             <a class="user-block__link user-block__link--basket" href="#" title="Корзина">2 товара</a>
             <div class="user-block-basket">
-              <table>
-                <tr>
+              <table class="user-block-basket__list">
+                <tr class="user-block-basket__item">
                   <td>
-                    <button class="btn-close" type="button">Удалить товар из корзины</button>
+                    <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
                   </td>
                   <td>
                     <img src="img/png/ice-cream/thumbs/ice-cream-1.png" width="33" height="33" alt="сливки-мини"/>
                   </td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг х <span>200 руб.</span></td>
-                  <td>300 руб.</td>
+                  <td class="user-block-basket__name">Пломбир с апельсиновым джемом</td>
+                  <td class="user-block-basket__weight">1,5 кг х <span class="user-block-basket__solo-price">200 руб.</span></td>
+                  <td class="user-block-basket__price">300 руб.</td>
                 </tr>
-                <tr>
+                <tr class="user-block-basket__item">
                   <td>
-                    <button class="btn-close" type="button">Удалить товар из корзины</button>
+                    <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
                   </td>
                   <td>
                     <img src="img/png/ice-cream/thumbs/ice-cream-7.png" width="33" height="33" alt="Клубничный пломбир-мини"/>
                   </td>
-                  <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-                  <td>1,5 кг х <span>300 руб.</span></td>
-                  <td>450 руб.</td>
+                  <td class="user-block-basket__name">Клубничный пломбир с присыпкой  из белого шоколада</td>
+                  <td class="user-block-basket__weight">1,5 кг х <span class="user-block-basket__solo-price">300 руб.</span></td>
+                  <td class="user-block-basket__price">450 руб.</td>
                 </tr>
               </table>
               <span class="user-block-basket__result">Итого: 750 руб.</span>
@@ -160,7 +160,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="btn filter__btn" type="submit">Применить</button>
+            <button class="filter__btn" type="submit">Применить</button>
           </form>
         </section>
         <section class="stock">
@@ -266,7 +266,7 @@
         </section>
         <ul class="pagination">
           <li class="pagination__arrow pagination__arrow--prev pagination__arrow--disable"><a class="pagination__link" title="Предыдущая страница каталога"></a></li>
-          <li class="pagination__item"><a class="pagination__link" title="1 страница каталога">1</a></li>
+          <li class="pagination__item"><a class="pagination__link pagination__link--active" title="1 страница каталога">1</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#" title="2 страница каталога">2</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#" title="3 страница каталога">3</a></li>
           <li class="pagination__item"><a class="pagination__link" href="#" title="4 страница каталога">4</a></li>
