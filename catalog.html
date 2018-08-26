@@ -100,63 +100,63 @@
         <section class="filter">
           <h2 class="visible-hidden">Фильтр сливочного мороженого</h2>
           <form class="filter__form" method="POST" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-sort">
-              <legend class="filter-sort__title" for="filter-sort">Сортировка:</legend>
-              <select class="filter-sort__list" name="filter-sort" id="filter-sort">
-                  <option class="filter-sort__item" value="price">По цене</option> 
-                  <option class="filter-sort__item" value="popularity" selected>По популярности</option>
-                  <option class="filter-sort__item" value="latest">По новизне</option>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title" for="filtser-sort">Сортировка:</legend>
+              <select class="filter__list filter__list--sort" name="filter-sort" id="filter-sort">
+                  <option class="filter__item" value="price">По цене</option> 
+                  <option class="filter__item" value="popularity" selected>По популярности</option>
+                  <option class="filter__item" value="latest">По новизне</option>
               </select>
             </fieldset>
-            <fieldset class="filter-price">
-              <legend class="filter-price__title">Цена: <span>100</span> руб. - <span>500</span> руб.</legend>
-              <div class="filter-price-block">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Цена: <span>100</span> руб. - <span>500</span> руб.</legend>
+              <div class="">
                 <!--  -->
               </div>
             </fieldset>
-            <fieldset class="filter-fat">
-              <legend class="filter-fat__title">Жирность:</legend>
-              <ul class="filter-fat__list">
-                <li class="filter-fat__item">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Жирность:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
                   <input class="visually-hidden" type="radio" name="filter-fat" value="0" id="filter-fat-0">
-                  <label class="filter-fat__label" for="filter-fat-0">0%</label>
+                  <label class="filter__label" for="filter-fat-0">0%</label>
                 </li>
-                <li class="filter-fat__item">
+                <li class="filter__item">
                   <input class="visually-hidden" type="radio" name="filter-fat" value="10" id="filter-fat-10" checked>
-                  <label class="filter-fat__label" for="filter-fat-10">до 10%</label>
+                  <label class="filter__label" for="filter-fat-10">до 10%</label>
                 </li>
-                <li class="filter-fat__item">
+                <li class="filter__item">
                   <input class="visually-hidden" type="radio" name="filter-fat" value="30" id="filter-fat-30">
-                  <label class="filter-fat__label" for="filter-fat-30">до 30%</label>
+                  <label class="filter__label" for="filter-fat-30">до 30%</label>
                 </li>
-                <li class="filter-fat__item">
+                <li class="filter__item">
                   <input class="visually-hidden" type="radio" name="filter-fat" value="31" id="filter-fat-31">
-                  <label class="filter-fat__label" for="filter-fat-31">выше 30%</label>
+                  <label class="filter__label" for="filter-fat-31">выше 30%</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-fillers">
-              <legend class="filter-fillers__title">Наполнители:</legend>
-              <ul class="filter-fillers__list">
-                <li class="filter-fillers__item">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Наполнители:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
                   <input class="visually-hidden" type="checkbox" name="filter-fillers" value="chocolate" id="filter-fillers-chocolate" checked>
-                  <label class="filter-fillers__label" for="filter-fillers-chocolate">шоколадные</label>
+                  <label class="filter__label" for="filter-fillers-chocolate">шоколадные</label>
                 </li>
-                <li class="filter-fillers__item">
+                <li class="filter__item">
                   <input class="visually-hidden" type="checkbox" name="filter-fillers" value="sugar" id="filter-fillers-sugar" checked>
-                  <label class="filter-fillers__label" for="filter-fillers-sugar">сахарные присыпки</label>
+                  <label class="filter__label" for="filter-fillers-sugar">сахарные присыпки</label>
                 </li>
-                <li class="filter-fillers__item">
+                <li class="filter__item">
                   <input class="visually-hidden" type="checkbox" name="filter-fillers" value="fruit" id="filter-fillers-fruit">
-                  <label class="filter-fillers__label" for="filter-fillers-fruit">фрукты</label>
+                  <label class="filter__label" for="filter-fillers-fruit">фрукты</label>
                 </li>
-                <li class="filter-fillers__item">
+                <li class="filter__item">
                   <input class="visually-hidden" type="checkbox" name="filter-fillers" value="syrups" id="filter-fillers-syrups">
-                  <label class="filter-fillers__label" for="filter-fillers-syrups">сиропы</label>
+                  <label class="filter__label" for="filter-fillers-syrups">сиропы</label>
                 </li>
-                <li class="filter-fillers__item">
+                <li class="filter__item">
                   <input class="visually-hidden" type="checkbox" name="filter-fillers" value="jams" id="filter-fillers-jams">
-                  <label class="filter-fillers__label" for="filter-fillers-jams">джемы</label>
+                  <label class="filter__label" for="filter-fillers-jams">джемы</label>
                 </li>
               </ul>
             </fieldset>
@@ -165,7 +165,7 @@
         </section>
         <section class="stock">
           <h2 class="visible-hidden">Каталог сливочного мороженого</h2>
-          <ul class="stock-list">
+          <ul class="stock-list stock-list--catalog">
             <li class="stock-list-item">
               <div class="stock-list-item__block">
                 <img class="stock-list-item__img" src="img/png/ice-cream/ice-cream-1.png" width="267" height="267" alt="Сливочное с апельсиновым">
@@ -275,26 +275,24 @@
         </ul>
       </div>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <ul class="social">
-          <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
-          <li class="social__item"><a class="social__link social__link--instagram" href="#">Instagram</a></li>
-          <li class="social__item"><a class="social__link social__link--facebook" href="#">Facebook</a></li>
-          <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Vkontakte</a></li>
-        </ul> 
-        <ul class="footer-links">
-          <li class="footer-links__item footer-links__item--bold"><a class ="footer-links__link" href="#" title="Для поставщиков">Для поставщиков</a></li>
-          <li class="footer-links__item"><a class ="footer-links__link" href="#" title="Наши документы">Наши документы</a></li>
-          <li class="footer-links__item"><a class ="footer-links__link" href="#" title="О производстве">О производстве</a></li>
-          <li class="footer-links__item"><a class ="footer-links__link" href="#" title="Экологические стандарты">Экологические стандарты</a></li>
-        </ul>
-        <div class="copyright">
-          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
-            <img class="copyright-logo__img" src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"/>
-          </a>
-          <p class="copyright__title">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">HTML Academy</a> Ⓒ 2017</p>
-        </div>
+    <footer class="footer container">
+      <ul class="social">
+        <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
+        <li class="social__item"><a class="social__link social__link--instagram" href="#">Instagram</a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#">Facebook</a></li>
+        <li class="social__item"><a class="social__link social__link--vkontakte" href="#">Vkontakte</a></li>
+      </ul> 
+      <ul class="footer-links">
+        <li class="footer-links__item"><a class="footer-links__link footer-links__link--heart" href="#" title="Для поставщиков">Для поставщиков</a></li>
+        <li class="footer-links__item"><a class="footer-links__link" href="#" title="Наши документы">Наши документы</a></li>
+        <li class="footer-links__item"><a class="footer-links__link" href="#" title="О производстве">О производстве</a></li>
+        <li class="footer-links__item"><a class="footer-links__link" href="#" title="Экологические стандарты">Экологические стандарты</a></li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
+          <img class="copyright-logo__img" src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"/>
+        </a>
+        <p class="copyright__title">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">HTML Academy</a> Ⓒ 2017</p>
       </div>
     </footer>
     <script src="js/script.js"></script>
