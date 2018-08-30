@@ -8,86 +8,84 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <a class="logo" href="index.html" title="На главную страницу GlaccyShop">
-          <img class="logo__img" src="img/svg/logo.svg" width="154" height="64" alt="Логотип GlaccyShop"/>
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item nav-dropdown">
-              <a class="nav__link nav__link--active" href="#" title="Каталог">Каталог</a>
-              <ul class="nav-dropdown__list">
-                <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Новинки">Новинки</a></li>
-                <li class="nav-dropdown__item"><a class="nav-dropdown__link nav-dropdown__link--active" href="catalog.html" title="Сливочное">Сливочное</a></li>
-                <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Щербеты">Щербеты</a></li>
-                <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Фруктовый лёд">Фруктовый лёд</a></li>
-                <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Мелорин">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <div class="user-block__item">
-            <a class="user-block__link user-block__link--search" href="#" title="Поиск"><span class="visible-hidden">Поиск</span></a>
-            <form class="user-block__search-form" method="POST" action="https://echo.htmlacademy.ru">
-              <label class="visible-hidden" for="user-block-search">Ввод текста поиска</label>
-              <input class="user-block__input" type="text" name="user-block-search" id="user-block-search" placeholder="Что ищем?"/>
-            </form>
-          </div>
-          <div class="user-block__item">
-            <a class="user-block__link user-block__link--login" href="#" title="Вход">Вход</a>
-            <form class="user-block__login-form" method="POST" action="https://echo.htmlacademy.ru">
-              <label class="visible-hidden" for="user-block-email">Ввод электронной почты</label>
-              <input class="user-block__input" type="email" name="email" id="user-block-email" placeholder="Электронная почта"/>
-              <label class="visible-hidden" for="user-block-password">Ввод пароля</label>
-              <input class="user-block__input" type="password" name="password" id="user-block-password" placeholder="Пароль"/>
-              <button class="btn user-block__btn" type="submit">Войти</button>
-              <p class="user-block-login-links">
-                <a class="user-block-login-links__item" href="#" title="Забыли пароль?">Забыли пароль?</a>
-                <a class="user-block-login-links__item" href="#" title="Новая регистрация">Новая регистрация</a>
-              </p>
-            </form>
-          </div>
-          <div class="user-block__item">
-            <a class="user-block__link user-block__link--basket" href="#" title="Корзина">2 товара</a>
-            <div class="user-block-basket">
-              <table class="user-block-basket__list">
-                <tr class="user-block-basket__item">
-                  <td>
-                    <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
-                  </td>
-                  <td>
-                    <img src="img/png/ice-cream/thumbs/ice-cream-1.png" width="33" height="33" alt="сливки-мини"/>
-                  </td>
-                  <td class="user-block-basket__name">Пломбир с апельсиновым джемом</td>
-                  <td class="user-block-basket__weight">1,5 кг х <span class="user-block-basket__solo-price">200 руб.</span></td>
-                  <td class="user-block-basket__price">300 руб.</td>
-                </tr>
-                <tr class="user-block-basket__item">
-                  <td>
-                    <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
-                  </td>
-                  <td>
-                    <img src="img/png/ice-cream/thumbs/ice-cream-7.png" width="33" height="33" alt="Клубничный пломбир-мини"/>
-                  </td>
-                  <td class="user-block-basket__name">Клубничный пломбир с присыпкой  из белого шоколада</td>
-                  <td class="user-block-basket__weight">1,5 кг х <span class="user-block-basket__solo-price">300 руб.</span></td>
-                  <td class="user-block-basket__price">450 руб.</td>
-                </tr>
-              </table>
-              <span class="user-block-basket__result">Итого: 750 руб.</span>
-              <a class="btn uset-block-basket__btn" href="#" title="Оформить заказ">Оформить заказ</a>
-            </div> 
-          </div>
+    <header class="header container">
+      <a class="logo" href="index.html" title="На главную страницу GlaccyShop">
+        <img class="logo__img" src="img/svg/logo.svg" width="154" height="64" alt="Логотип GlaccyShop"/>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item--active nav-dropdown">
+            <a class="nav__link" href="#" title="Каталог">Каталог</a>
+            <ul class="nav-dropdown__list">
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Новинки">Новинки</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link nav-dropdown__link--active" href="catalog.html" title="Сливочное">Сливочное</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Щербеты">Щербеты</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Фруктовый лёд">Фруктовый лёд</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link" href="#" title="Мелорин">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">О Компании</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <div class="user-block__item">
+          <a class="user-block__link user-block__link--search" href="#" title="Поиск"><span class="visible-hidden">Поиск</span></a>
+          <form class="user-block__search-form" method="POST" action="https://echo.htmlacademy.ru">
+            <label class="visible-hidden" for="user-block-search">Ввод текста поиска</label>
+            <input class="user-block__input" type="text" name="user-block-search" id="user-block-search" placeholder="Что ищем?"/>
+          </form>
         </div>
-        <p class="contacts">
-          <span class="contacts__worktime">С 10 до 20, ежедневно</span>
-          <a class="contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
-        </p>
+        <div class="user-block__item">
+          <a class="user-block__link user-block__link--login" href="#" title="Вход">Вход</a>
+          <form class="user-block__login-form" method="POST" action="https://echo.htmlacademy.ru">
+            <label class="visible-hidden" for="user-block-email">Ввод электронной почты</label>
+            <input class="user-block__input" type="email" name="email" id="user-block-email" placeholder="Электронная почта"/>
+            <label class="visible-hidden" for="user-block-password">Ввод пароля</label>
+            <input class="user-block__input" type="password" name="password" id="user-block-password" placeholder="Пароль"/>
+            <button class="btn user-block__btn" type="submit">Войти</button>
+            <p class="user-block-login-links">
+              <a class="user-block-login-links__item" href="#" title="Забыли пароль?">Забыли пароль?</a>
+              <a class="user-block-login-links__item" href="#" title="Новая регистрация">Новая регистрация</a>
+            </p>
+          </form>
+        </div>
+        <div class="user-block__item">
+          <a class="user-block__link user-block__link--basket" href="#" title="Корзина">2 товара</a>
+          <div class="user-block-basket">
+            <table class="user-block-basket__list">
+              <tr class="user-block-basket__item">
+                <td>
+                  <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
+                </td>
+                <td>
+                  <img src="img/png/ice-cream/thumbs/ice-cream-1.png" width="33" height="33" alt="сливки-мини"/>
+                </td>
+                <td class="user-block-basket__name">Пломбир с апельсиновым джемом</td>
+                <td class="user-block-basket__weight">1,5 кг х <span class="user-block-basket__solo-price">200 руб.</span></td>
+                <td class="user-block-basket__price">300 руб.</td>
+              </tr>
+              <tr class="user-block-basket__item">
+                <td>
+                  <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
+                </td>
+                <td>
+                  <img src="img/png/ice-cream/thumbs/ice-cream-7.png" width="33" height="33" alt="Клубничный пломбир-мини"/>
+                </td>
+                <td class="user-block-basket__name">Клубничный пломбир с присыпкой  из белого шоколада</td>
+                <td class="user-block-basket__weight">1,5 кг х <span class="user-block-basket__solo-price">300 руб.</span></td>
+                <td class="user-block-basket__price">450 руб.</td>
+              </tr>
+            </table>
+            <span class="user-block-basket__result">Итого: 750 руб.</span>
+            <a class="btn uset-block-basket__btn" href="#" title="Оформить заказ">Оформить заказ</a>
+          </div> 
+        </div>
       </div>
+      <p class="contacts">
+        <span class="contacts__worktime">С 10 до 20, ежедневно</span>
+        <a class="contacts__tel" href="tel:+78124502525">8 812 450-25-25</a>
+      </p>
     </header>
     <main class="main">
       <div class="container">
