@@ -25,6 +25,8 @@ form.addEventListener("submit", function (evt) {
   if (!msg.value) {
     evt.preventDefault();
     popup.classList.add("feedback--error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("feedback--error");
   }
 });
 

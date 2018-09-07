@@ -112,7 +112,12 @@
                 </select>
               </fieldset>
               <fieldset class="filter__fieldset" style="    width: 221px;">
-                <legend class="filter__title">Цена: <span>100</span> руб. – <span>500</span> руб.</legend>
+                <legend class="filter__title">
+                  Цена: 
+                  <label class="visible-hidden" for="filter-price-min">Ввод минимальной цены</label>
+                  <input class="feedback__input" type="number" name="filter-price-min" id="filter-price-min" placeholder="100"/>  
+                  руб. – <span>500</span> руб.</legend>
+                 
                 <div class="">
                   <!--  -->
                 </div>
@@ -166,7 +171,7 @@
               <button class="filter__btn" type="submit">Применить</button>
             </form>
           </section>
-          <section class="stock">
+          <section class="stock stock--catalog">
             <h2 class="visible-hidden">Каталог сливочного мороженого</h2>
             <ul class="stock-list stock-list--catalog">
               <li class="stock-list-item">
