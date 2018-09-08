@@ -430,9 +430,7 @@ img {
 }
 
 .user-block-login-links {
-  display: flex;
   flex: 0 1 50%;
-  flex-direction: column;
   margin: 0;
   margin-left: auto;
 }
@@ -440,12 +438,10 @@ img {
 .user-block-login-links__item {
   font-weight: 400;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 24px;
   color: #323232;
 
-  text-decoration-color: #323232;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+  border-bottom: 1px solid #323232;
 }
 
 .user-block__btn {
@@ -470,11 +466,18 @@ img {
   padding: 7px 13px 10px 13px;
 
   font-weight: 700;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 24px;
 
-  border: 1px solid #d3d3d2;
+  border: 1px solid #999999;
   border-radius: 5px;
+}
+
+.user-block__input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
 }
 
 .user-block__input:hover {
@@ -516,7 +519,7 @@ img {
 
   font-size: 0;
 
-  background-color: unset;
+  background-color: transparent;
   background-image: url(../img/svg/cross-small.svg);
   background-repeat: no-repeat;
   border: none;
@@ -531,6 +534,14 @@ img {
   line-height: 18px;
   text-align: right;
   color: #323232;
+}
+
+.user-block-basket__table {
+  display: block;
+}
+
+.user-block-basket__cell {
+  display: block;
 }
 
 .user-block-basket__list {
@@ -565,16 +576,20 @@ img {
 }
 
 .user-block-basket__name {
-  max-width: 216px;
+  display: block;
+  width: 220px;
+  max-width: 220px;
   margin-top: 5px;
   margin-right: 31px;
 }
 
 .user-block-basket__price {
+  display: block;
   margin-top: 5px;
 }
 
 .user-block-basket__weight {
+  display: block;
   max-width: 95px;
   margin-top: 5px;
   margin-right: 29px;
@@ -796,6 +811,8 @@ img {
 
 .stock-list--catalog .stock-list-item__description {
   margin: 0 8px;
+
+  text-align: justify;
 }
 
 .stock-list-item__description:hover {
@@ -848,12 +865,16 @@ img {
 
 /* ABOUT */
 .about {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
   margin-bottom: 40px;
   padding: 26px 25px 26px 20px;
 
   background-color: #ffffff;
   background-image: url("../img/png/wafer-background.png");
-  border-radius: 15px;
+  background-size: cover;
+  border-radius: 25px;
 }
 
 .about__title {
@@ -871,6 +892,8 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -880,6 +903,8 @@ img {
 .about__item {
   flex: 0 1 535px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 535px;
   padding-top: 15px;
   padding-left: 57px;
 
@@ -890,6 +915,8 @@ img {
 
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  -webkit-box-flex: 0;
 }
 
 .about__item--ice-cream {
@@ -965,6 +992,7 @@ img {
 
 .news-subscribe {
   box-sizing: border-box;
+  width: 100%;
   max-width: 560px;
   padding: 5px 6px;
 
@@ -1058,13 +1086,16 @@ img {
   position: relative;
   z-index: 2;
 
+  width: 100%;
+  height: 430px;
+
   border: none;
 }
 
 .address-info {
   position: absolute;
   top: 63px;
-  right: 27px;
+  left: 50%;
   z-index: 4;
 
   box-sizing: border-box;
@@ -1073,6 +1104,7 @@ img {
 
   background-color: #fefefe;
   border-radius: 15px;
+  transform: translateX(270px);
 }
 
 .address-info__text {
@@ -1279,7 +1311,7 @@ img {
 
 .copyright-logo__img {
   width: 108px;
-  height: auto;
+  height: 39px;
 }
 
 .copyright__link {
@@ -1367,7 +1399,7 @@ img {
 
   font-size: 0;
 
-  background-color: unset;
+  background-color: transparent;
   background-image: url(../img/svg/cross-big.svg);
   border: none;
   cursor: pointer;

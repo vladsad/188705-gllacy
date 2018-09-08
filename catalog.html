@@ -56,13 +56,13 @@
           <div class="user-block__item">
             <a class="user-block__link user-block__link--active user-block__link--basket" href="#" title="Корзина">2 товара</a>
             <div class="user-block-basket">
-              <table>
+              <table class="user-block-basket__table">
                 <tbody class="user-block-basket__list">
                   <tr class="user-block-basket__item">
-                    <td>
+                    <td class="user-block-basket__cell">
                       <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
                     </td>
-                    <td>
+                    <td class="user-block-basket__cell">
                       <img class="user-block-basket__thumb" src="img/png/ice-cream/thumbs/ice-cream-1.png" width="33" height="33" alt="сливки-мини"/>
                     </td>
                     <td class="user-block-basket__name">Пломбир с апельсиновым джемом</td>
@@ -70,10 +70,10 @@
                     <td class="user-block-basket__price">300 руб.</td>
                   </tr>
                   <tr class="user-block-basket__item">
-                    <td>
+                    <td class="user-block-basket__cell">
                       <button class="user-block__btn-close" type="button">Удалить товар из корзины</button>
                     </td>
-                    <td>
+                    <td class="user-block-basket__cell">
                       <img class="user-block-basket__thumb" src="img/png/ice-cream/thumbs/ice-cream-7.png" width="33" height="33" alt="Клубничный пломбир-мини"/>
                     </td>
                     <td class="user-block-basket__name">Клубничный пломбир с присыпкой  из белого шоколада</td>
@@ -104,7 +104,7 @@
             <h2 class="visible-hidden">Фильтр сливочного мороженого</h2>
             <form class="filter__form" method="POST" action="https://echo.htmlacademy.ru">
               <fieldset class="filter__fieldset">
-                <legend class="filter__title" for="filtser-sort">Сортировка:</legend>
+                <legend class="filter__title">Сортировка:</legend>
                 <select class="filter__list filter__list--sort" name="filter-sort" id="filter-sort">
                     <option class="filter__item" value="price">по цене</option> 
                     <option class="filter__item" value="popularity" selected>по популярности</option>
@@ -274,7 +274,7 @@
             </ul>
           </section>
           <ul class="pagination">
-            <li class="pagination__item"><a class="pagination__link pagination__link--arrow-prev pagination__link--disabled" title="Предыдущая страница каталога" disabled></a></li>
+            <li class="pagination__item"><a class="pagination__link pagination__link--arrow-prev pagination__link--disabled" title="Предыдущая страница каталога"></a></li>
             <li class="pagination__item"><a class="pagination__link pagination__link--active" title="1 страница каталога">1</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#" title="2 страница каталога">2</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#" title="3 страница каталога">3</a></li>
