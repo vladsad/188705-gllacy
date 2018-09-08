@@ -1,3 +1,37 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes error {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes error-input {
+  0% {
+    border-color: #d3d3d2;
+  }
+
+  100% {
+    border-color: #ff0000;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -646,7 +680,7 @@ img {
 }
 
 .stock--catalog {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .stock-list {
@@ -706,7 +740,7 @@ img {
 }
 
 .stock-list--catalog .stock-list-item {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .stock-list .stock-list-item:hover .stock-list-item__link {
@@ -730,11 +764,13 @@ img {
 .stock-list-item-block__weight::before {
   content: url(../img/svg/ruble.svg);
   position: absolute;
-  top: 6px;
+  top: 5px;
   right: 40px;
 
   width: 31px;
   height: 36px;
+
+  filter: drop-shadow(0.5px 0.9px 3px rgba(49, 50, 53, 0.5));
 }
 
 .stock-list-item__price {
@@ -756,6 +792,10 @@ img {
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stock-list--catalog .stock-list-item__description {
+  margin: 0 8px;
 }
 
 .stock-list-item__description:hover {
@@ -809,7 +849,7 @@ img {
 /* ABOUT */
 .about {
   margin-bottom: 40px;
-  padding: 23px 25px 23px 20px;
+  padding: 26px 25px 26px 20px;
 
   background-color: #ffffff;
   background-image: url("../img/png/wafer-background.png");
@@ -886,7 +926,7 @@ img {
   box-sizing: border-box;
   width: 100%;
   max-width: 560px;
-  padding: 23px 20px;
+  padding: 25px 20px;
   padding-bottom: 80px;
 
   background-color: #ffffff;
@@ -1006,8 +1046,12 @@ img {
   position: relative;
 
   width: 100%;
-  max-height: 430px;
-  overflow: hidden;
+  height: 430px;
+
+  background-image: url(../img/png/map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .address__iframe {
@@ -1080,7 +1124,7 @@ img {
   width: 100%;
   height: auto;
 
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 /* ADDRESS */
 
@@ -1254,30 +1298,6 @@ img {
 
 /* FEEDBACK */
 
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes error {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -1299,7 +1319,7 @@ img {
 
 .feedback {
   position: fixed;
-  top: 338px;
+  top: 25%;
   left: 50%;
   z-index: 100;
 
@@ -1321,6 +1341,10 @@ img {
 
 .feedback--error {
   animation: error 0.6s;
+}
+
+.feedback--error .feedback__input--textarea {
+  animation: error-input 0.6s;
 }
 
 .feedback__title {
@@ -1369,6 +1393,10 @@ img {
   margin-bottom: 25px;
 
   resize: vertical;
+}
+
+.feedback__input--error {
+  border-color: #ff0000;
 }
 
 .feedback__input:hover {
@@ -1496,8 +1524,12 @@ img {
 }
 
 .filter__list {
+  position: relative;
+
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
+  height: 34px;
   margin: 0;
   padding: 8px;
   padding-right: 14px;
@@ -1637,6 +1669,58 @@ input[name=filter-fillers]:checked + label::before {
   border: none;
   box-shadow: inset 0 2px 1px 0 #696969;
 }
+
+.filter__scale {
+  position: absolute;
+  top: 50%;
+  left: 23px;
+
+  box-sizing: border-box;
+  width: calc(100% - 45px);
+  height: 4px;
+
+  background-color: rgba(254, 254, 254, 0.5);
+  transform: translateY(-50%);
+}
+
+.filter__bar {
+  position: relative;
+  left: 13%;
+
+  box-sizing: border-box;
+  width: 60%;
+  height: 4px;
+
+  background-color: white;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: 50%;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+  background-image: url(../img/svg/filter-button.svg);
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.filter__toggle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.filter__toggle--min {
+  left: 13%;
+}
+
+.filter__toggle--max {
+  left: 70%;
+}
+
 /* FILTER */
 
 /* PAGINATION */

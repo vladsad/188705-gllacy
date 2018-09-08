@@ -112,14 +112,15 @@
                 </select>
               </fieldset>
               <fieldset class="filter__fieldset" style="    width: 221px;">
-                <legend class="filter__title">
-                  Цена: 
-                  <label class="visible-hidden" for="filter-price-min">Ввод минимальной цены</label>
-                  <input class="feedback__input" type="number" name="filter-price-min" id="filter-price-min" placeholder="100"/>  
-                  руб. – <span>500</span> руб.</legend>
-                 
-                <div class="">
-                  <!--  -->
+                <legend class="filter__title">Цена: 
+                  <span class="filter__price-min">100</span> руб. – <span class="filter__price-max">500</span> руб.
+                </legend>
+                <div class="filter__list">
+                    <div class="filter__scale">
+                      <div class="filter__bar"></div>
+                      <div class="filter__toggle filter__toggle--min"></div>
+                      <div class="filter__toggle filter__toggle--max"></div>  
+                    </div>
                 </div>
               </fieldset>
               <fieldset class="filter__fieldset">
