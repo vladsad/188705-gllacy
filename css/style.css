@@ -73,7 +73,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -1877,7 +1877,12 @@ img {
   padding: 7px 30px 7px 14px;
   overflow: hidden;
 
-  background-image: url(../img/svg/select-arrow.svg);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
+
+  background-image: url(../img/svg/icon-down-dir.svg);
   background-repeat: no-repeat;
   background-position: 168px center;
   background-size: 10px;
@@ -1895,6 +1900,8 @@ img {
 
 .filter__list--sort:hover {
   color: #323232;
+
+  background-image: url(../img/svg/select-arrow.svg);
 }
 
 .filter__label {
