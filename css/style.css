@@ -2030,14 +2030,14 @@ input[name=filter-fillers]:checked + label::before {
 
 .filter__toggle {
   position: absolute;
-  top: 50%;
 
   width: 20px;
-  height: 20px;
+  height: 23px;
 
-  background-color: #ffffff;
   background-image: url(../img/svg/filter-button.svg);
   background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px 23px;
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
